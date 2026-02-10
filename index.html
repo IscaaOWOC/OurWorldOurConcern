@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LEONIX Car</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="LEONIX – an electric racing car built by ISCAA LIONS students for the EVGP competition, combining smart engineering, telemetry, and AI-driven strategy."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+<div class="brand">
+  <img src="gallery/car-logo.jpeg" alt="LEONIX Logo" class="brand-logo-img" />
+  <div class="brand-text">ISCAA E-Car LEONIX</div>
+</div>
+
+      <nav class="nav-links">
+  <a href="#about">About</a>
+  <a href="#specs">Specs</a>
+  <a href="#telemetry">Telemetry</a>
+  <a href="#team">Team</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#race">Race</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- Social media icons (desktop) -->
+<div class="nav-socials">
+  <a href="https://www.instagram.com/iscaalions?igsh=eHVwM2lzcXg0Zmpx" target="_blank" aria-label="Instagram" title="Instagram">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.51 4.51 0 0 0 12 7.5zm0 7.3A2.8 2.8 0 1 1 14.8 12 2.81 2.81 0 0 1 12 14.8zM17.5 6a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"/>
+    </svg>
+  </a>
+
+  <a href="https://www.tiktok.com/@leonix_iscaa?_r=1&_t=ZS-93JXd1XTjwC" target="_blank" aria-label="TikTok" title="TikTok">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M16 3c.4 2.6 2.3 4.6 5 5v3.1c-1.9.1-3.6-.5-5-1.6V16c0 3.3-2.7 6-6 6s-6-2.7-6-6 2.7-6 6-6c.4 0 .8 0 1.2.1v3.3c-.4-.2-.8-.3-1.2-.3-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3V3h3z"/>
+    </svg>
+  </a>
+
+  <a href="https://www.youtube.com/@leonix-iscaa" target="_blank" aria-label="YouTube" title="YouTube">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.5v-7l6.2 3.5z"/>
+    </svg>
+  </a>
+</div>
+
+      
+      <div class="nav-burger" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="hero-kicker">EVGP | Student-Built Electric Racing</p>
+          <h1 class="hero-title">
+            <span>LEONIX E-CAR</span>  
+            Electric Velocity, Smart Strategy.
+          </h1>
+          <p class="hero-subtitle">
+            LEONIX is an EVGP-spec electric racing car designed and built by SABIS
+            students. From chassis and aerodynamics to LoRa telemetry and AI-driven
+            pit strategy, every detail is engineered for endurance and efficiency.
+          </p>
+
+          <div class="hero-meta">
+            <span>EV Grand Prix</span>
+            <span>Student Engineering</span>
+            <span>LoRa Telemetry</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#race" class="btn btn-primary">
+              Race Season Details →
+            </a>
+            <a href="#telemetry" class="btn btn-outline">
+              <span class="dot"></span>Data Concept
+            </a>
+          </div>
+
+          <p class="hero-note">
+.
+          </p>
+        </div>
+
+        <div>
+          <div class="hero-car-card">
+            <div class="hero-tag">LEONIX · #EVGP</div>
+<div class="car-photo-wrap">
+  <img
+    class="car-photo"
+    src="gallery/hero-car.jpeg"
+    alt="LEONIX EVGP car blueprint design"
+  />
+
+  <!-- Animated drivetrain line -->
+  <svg
+    class="drive-overlay"
+    viewBox="0 0 1000 563"
+    preserveAspectRatio="none"
+    aria-hidden="true"
+  >
+    <!-- Glow underlay -->
+    <path
+      class="drive-path drive-glow"
+      d="M120 390 C260 390, 360 390, 470 390 S680 390, 880 390"
+    />
+    <!-- Main drivetrain line -->
+    <path
+      class="drive-path drive-line"
+      d="M120 390 C260 390, 360 390, 470 390 S680 390, 880 390"
+    />
+  </svg>
+</div>
+            <div class="car-text">
+              <div>
+                <div class="car-name">Leonix E-Car</div>
+                <div class="car-highlight">48V · Brushless DC · Telemetry Ready</div>
+              </div>
+              <div>
+                <span style="font-size:0.72rem;color:var(--accent-muted);">Avg. speed</span>
+                <div style="font-size:1.1rem;font-weight:600;">35 km/h</div>
+              </div>
+            </div>
+            <div class="badge-row">
+              <div class="badge">SABIS Team</div>
+              <div class="badge">LoRa + Cycle Analyst</div>
+              <div class="badge">AI Pit Strategy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container two-col">
+        <div>
+          <p class="section-label">About the Project</p>
+          <h2 class="section-title">Student-built electric race car</h2>
+          <p class="section-intro">
+            LEONIX is more than a car – it’s a full engineering journey. Students
+            design the chassis, calculate gear ratios, wire the electrical system,
+            and capture performance data during practice and race day. The project
+            connects classroom physics, electronics, and programming with real
+            competition pressure on track.
+          </p>
+          <p class="section-intro" style="margin-bottom:1.4rem;">
+            The goal is simple: build a safe, efficient, and competitive EVGP car
+            that can complete the endurance race with the best possible lap
+            consistency, battery strategy, and driver performance.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Project Snapshot</h3>
+          <div class="info-grid">
+            <div class="info-item">
+              <div>
+                <div class="info-label">Competition</div>
+                <div>EV Grand Prix (EVGP)</div>
+              </div>
+              <div>
+                <div class="info-label">Team</div>
+                <div>ISCAA · LEONIX Racing</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div>
+                <div class="info-label">Focus</div>
+                <div>Efficiency · Safety · Data</div>
+              </div>
+              <div>
+                <div class="info-label">Key Tech</div>
+                <div>LoRa, Cycle Analyst, AI</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div>
+                <div class="info-label">Students</div>
+                <div>Mechanical · Electrical · AI</div>
+              </div>
+              <div>
+                <div class="info-label">Supervision</div>
+                <div>STEM / Robotics Department</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECS -->
+    <section id="specs">
+      <div class="container">
+        <p class="section-label">Technical Specs</p>
+        <h2 class="section-title">Built for endurance & control</h2>
+        <p class="section-intro">
+          LEONIX is designed around a high-efficiency electric powertrain,
+          lightweight chassis, and carefully tuned gearing. Below are placeholder
+          specs you can update with final values once the car is fully tested.
+        </p>
+
+        <div class="specs-grid">
+          <article class="spec-card">
+            <div class="spec-chip">Powertrain</div>
+            <div class="spec-value">Brushless DC Motor</div>
+            <p class="spec-note">
+              High-torque brushless motor tuned for endurance racing. Powered by a
+              48V battery system with real-time current and voltage monitoring.
+            </p>
+            <div class="spec-accent"></div>
+          </article>
+
+          <article class="spec-card">
+            <div class="spec-chip">Battery</div>
+            <div class="spec-value">48 V Pack</div>
+            <p class="spec-note">
+              Custom battery configuration optimized for race duration, balancing
+              energy capacity with weight and safety constraints.
+            </p>
+            <div class="spec-accent"></div>
+          </article>
+
+          <article class="spec-card">
+            <div class="spec-chip">Performance</div>
+            <div class="spec-value">Target 33–35 km/h</div>
+            <p class="spec-note">
+              Speed is tuned for stable cornering and efficient energy use, not
+              just maximum straight-line speed.
+            </p>
+            <div class="spec-accent"></div>
+          </article>
+
+          <article class="spec-card">
+            <div class="spec-chip">Chassis & Body</div>
+            <div class="spec-value">Lightweight Frame</div>
+            <p class="spec-note">
+              Student-designed chassis with safety roll hoops, driver ergonomics,
+              and aerodynamic body inspired by karting and formula-style cars.
+            </p>
+            <div class="spec-accent"></div>
+          </article>
+
+          <article class="spec-card">
+            <div class="spec-chip">Safety Systems</div>
+            <div class="spec-value">Kill Switch & Fusing</div>
+            <p class="spec-note">
+              External kill switch, main fuse protection, driver harness, and
+              braking system aligned with competition rules.
+            </p>
+            <div class="spec-accent"></div>
+          </article>
+
+          <article class="spec-card">
+            <div class="spec-chip">Data & Strategy</div>
+            <div class="spec-value">Telemetry Driven</div>
+            <p class="spec-note">
+              Race decisions are supported by live data using python Dashboard: speed, current, voltage,
+              motor temperature, and energy used per lap.
+            </p>
+            <div class="spec-accent"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TELEMETRY -->
+    <section id="telemetry">
+      <div class="container telemetry-layout">
+        <div>
+          <p class="section-label">Telemetry & AI</p>
+          <h2 class="section-title">From track data to strategy</h2>
+          <p class="section-intro">
+            LEONIX uses a Cycle Analyst paired with Data logger and LoRa transmitter to send
+            real-time performance data from the car to the pit. Voltage, current,
+            speed, and amp-hours are monitored lap by lap, allowing the team to
+            adjust driving style and pit strategy dynamically.
+          </p>
+          <p class="section-intro" style="margin-bottom:1.2rem;">
+            In the next phase, this data can feed an AI model that recommends
+            target lap times, maximum current draw, and optimal pace to finish the
+            race with the best possible position while respecting battery limits.
+          </p>
+        </div>
+
+        <div class="telemetry-widget">
+          <div class="telemetry-header">
+            <div class="telemetry-title">Live Telemetry (Demo)</div>
+            <div class="telemetry-pill">LoRa · 915 MHz · Cycle Analyst</div>
+          </div>
+
+          <div class="telemetry-grid">
+            <div class="telemetry-item">
+              <div class="t-label">Speed</div>
+              <div class="t-value">32.9 km/h</div>
+              <div class="t-sub">Lap 6 · Stable Pace</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="t-label">Pack Voltage</div>
+              <div class="t-value">46.8 V</div>
+              <div class="t-sub">Healthy under load</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="t-label">Current Draw</div>
+              <div class="t-value">27.3 A</div>
+              <div class="t-sub">Acceleration out of corner</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="t-label">Energy Used</div>
+              <div class="t-value">3.1 Ah</div>
+              <div class="t-sub">Since race start</div>
+            </div>
+          </div>
+
+          <p class="telemetry-footnote">
+            These values are placeholders based on typical EVGP telemetry. Once
+            your LoRa gateway and backend are ready, this card can be connected to
+            real-time data from python dashboard .
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+  <!-- TEAM -->
+<section id="team">
+  <div class="container">
+    <p class="section-label">The Team</p>
+    <h2 class="section-title">ISCAA LIONS Team</h2>
+    <p class="section-intro">
+      LEONIX is powered by a multidisciplinary student team. Each member owns a
+      specific area of the project—from leadership and safety to mechanical
+      design, electrical systems, driving, media, and documentation.
+    </p>
+
+    <!-- LEADERSHIP / HEADS SECTION -->
+    <div class="heads-section">
+      <h3 class="heads-title">Leadership Team</h3>
+
+      <div class="heads-grid">
+
+        <!-- Noura -->
+        <div class="head-card">
+          <div class="head-crown">♛</div>
+          <img class="head-photo" src="gallery/team.jpeg" alt="Noura Tridane">
+          <div class="head-name">Noura Tridane</div>
+          <div class="head-role">Head of LEONIX Project</div>
+        </div>
+
+        <!-- Meera -->
+        <div class="head-card">
+          <div class="head-crown">♛</div>
+          <img class="head-photo" src="gallery/team.jpeg" alt="Meera Barhumi">
+          <div class="head-name">Meera Barhumi</div>
+          <div class="head-role">Head of LEONIX Project</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MAIN TEAM GRID -->
+    <div class="team-grid">
+
+      <!-- DRIVERS -->
+      <div class="team-card hover-card">
+        <img class="team-photo" src="gallery/team.jpeg" alt="Drivers">
+        <div class="team-role">Drivers</div>
+        <div class="team-name">Bashar Qalawi · Hashem Alberaqdar . Omar Hashem . Assem El Khatib</div>
+        <p class="team-desc">
+          Deliver consistent lap times, safe maneuvering, and execute real-time
+          strategy based on telemetry and pit instructions.
+        </p>
+      </div>
+
+      <!-- MEDIA -->
+      <div class="team-card hover-card">
+        <img class="team-photo" src="gallery/team.jpeg" alt="Media">
+        <div class="team-role">Media</div>
+        <div class="team-name">Zarsha Khalid . Celine AbedAlqader . Wadha AlDhaheri</div>
+        <p class="team-desc">
+          Captures the LEONIX story through photography, videography, and social media.
+        </p>
+      </div>
+
+      <!-- MECHANICAL -->
+      <div class="team-card hover-card">
+        <img class="team-photo" src="gallery/team.jpeg" alt="Mechanical Lead">
+        <div class="team-role">Mechanical</div>
+        <div class="team-name">Mohammed Kassab . Mohammed Al Sheryani . Hamad Balasli</div>
+        <p class="team-desc">
+          Handles chassis, steering, and mechanical integrity of the car.
+        </p>
+      </div>
+
+      <!-- 3D & INNOVATION -->
+      <div class="team-card hover-card">
+        <img class="team-photo" src="gallery/team.jpeg" alt="3D and Innovation">
+        <div class="team-role">3D & Innovation</div>
+        <div class="team-name">Mira Alshafi </div>
+        <p class="team-desc">
+          Designs and prototypes 3D printed components and creative solutions.
+        </p>
+      </div>
+
+      <!-- SAFETY -->
+      <div class="team-card hover-card">
+        <img class="team-photo" src="gallery/team.jpeg" alt="Safety Lead">
+        <div class="team-role">Safety</div>
+        <div class="team-name">Faris Qasqas</div>
+        <p class="team-desc">
+          Manages driver safety checks and ensures compliance with EVGP safety rules.
+        </p>
+      </div>
+
+      <!-- ELECTRICAL -->
+      <div class="team-card hover-card">
+        <img class="team-photo" src="gallery/team.jpeg" alt="Electrical Lead">
+        <div class="team-role">Electrical</div>
+        <div class="team-name">Abdalrhman . Adam Irsan</div>
+        <p class="team-desc">
+          Handles wiring, battery systems, controller setup, and electrical safety.
+        </p>
+      </div>
+
+      <!-- DOCUMENTATION -->
+      <div class="team-card hover-card">
+        <img class="team-photo" src="gallery/team.jpeg" alt="Documentation">
+        <div class="team-role">Documentation</div>
+        <div class="team-name">Hala Abboud</div>
+        <p class="team-desc">
+          Creates project reports, logs, and presentation documents for judges.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- GALLERY & RACE INFO -->
+    <section id="gallery">
+      <div class="container">
+        <p class="section-label">Gallery & Race</p>
+        <h2 class="section-title">From workshop to starting grid</h2>
+        <p class="section-intro">
+          Here you can showcase the real LEONIX journey – from chassis fabrication
+          and wiring to body design, testing sessions, and race day photos.
+        </p>
+
+        <div class="race-grid">
+          <!-- LEFT: REAL PHOTO GALLERY -->
+          <div>
+            <div class="gallery-grid">
+              <!-- Update the file names to match your uploaded images in the 'gallery' folder -->
+              <img src="gallery/1.jpeg" alt="Chassis fabrication and assembly">
+              <img src="gallery/2.jpeg" alt="Electrical wiring and battery pack preparation">
+              <img src="gallery/3.jpeg" alt="Body design and paint for LEONIX">
+              <img src="gallery/4.jpeg" alt="Track testing and driver training">
+              <img src="gallery/5.jpeg" alt="Body design and paint for LEONIX">
+              <img src="gallery/6.jpeg" alt="Track testing and driver training">
+              <img src="gallery/7.jpeg" alt="Track testing and driver training">
+              <img src="gallery/8.jpeg" alt="Track testing and driver training">
+              <img src="gallery/9.jpeg" alt="Track testing and driver training">
+              <img src="gallery/10.jpeg" alt="Track testing and driver training">
+              <img src="gallery/11.jpeg" alt="Track testing and driver training">
+              <img src="gallery/12.jpeg" alt="Track testing and driver training">
+              <img src="gallery/13.jpeg" alt="Track testing and driver training">
+              <img src="gallery/14.jpeg" alt="Track testing and driver training">
+              <img src="gallery/15.jpeg" alt="Track testing and driver training">
+              <img src="gallery/16.jpeg" alt="Track testing and driver training">
+              <img src="gallery/17.jpeg" alt="Track testing and driver training">
+              <img src="gallery/18.jpeg" alt="Track testing and driver training">
+              <img src="gallery/19.jpeg" alt="Track testing and driver training">
+              <img src="gallery/20.jpeg" alt="Track testing and driver training">
+              <img src="gallery/21.jpeg" alt="Track testing and driver training">
+            </div>
+          </div>
+
+          <!-- RIGHT: RACE INFORMATION -->
+          <div id="race">
+            <div class="info-card">
+              <h3>Race Information</h3>
+              <p style="font-size:0.88rem;">
+                Sharjah, 12,13,14/02/2026.
+              </p>
+              <div class="info-grid" style="margin-top:0.9rem;">
+                <div class="info-item">
+                  <div>
+                    <div class="info-label">Event</div>
+                    <div>EV Grand Prix – UAE</div>
+                  </div>
+                  <div>
+                    <div class="info-label">Season</div>
+                    <div>2025 – 2026</div>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div>
+                    <div class="info-label">Location</div>
+                    <div>Karting Town Sharjah</div>
+                  </div>
+                  <div>
+                    <div class="info-label">Race Type</div>
+                    <div>Endurance · Electric Car</div>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div>
+                    <div class="info-label">Team Target</div>
+                    <div>Finish all laps with optimal battery usage</div>
+                  </div>
+                  <div>
+                    <div class="info-label">Focus</div>
+                    <div>Reliability, Safety, Consistent Pace</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="race-pill-row">
+                <div class="race-pill">Practice Sessions</div>
+                <div class="race-pill">Lap Time Analysis</div>
+                <div class="race-pill">Battery Strategy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label">Contact & Collaboration</p>
+          <h2 class="section-title">Partner with Leonix</h2>
+          <p class="section-intro">
+            LEONIX is a live STEM lab on wheels. If you’re interested in
+            supporting the project, collaborating on research, or inviting the
+            team for a showcase, reach out using the form or school contact
+            details below.
+          </p>
+
+          <div class="contact-list">
+            <p><strong>School:</strong> [International School Of Choueifat · Al Ain, UAE]</p>
+            <p><strong>Program:</strong> EVGP E-Car</p>
+            <p><strong>Email:</strong> [iscaaecar@gmail.com]</p>
+          </div>
+
+        </div>
+
+        <div class="contact-box">
+          <form>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" />
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Your Email" />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              placeholder="Tell us how you’d like to collaborate or support LEONIX."
+            ></textarea>
+
+            <button type="button" class="btn btn-primary">
+              Send 
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer>
+  <div class="container">
+    <span>Leonix EVGP Racing · Student Engineering Project</span>
+
+    <div class="visits-box">
+      <span class="visits-label">Site Visitors</span>
+      <img id="webcounter" src="https://hitwebcounter.com/counter/counter.php?page=12899265&style=0006&nbdigits=6&type=page&initCount=0"/>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Simple per-browser visitor counter using localStorage
+  (function () {
+    const el = document.getElementById('visitor-count');
+    if (!el) return;
+
+    const KEY = 'leonix-visitor-count';
+    let count = localStorage.getItem(KEY);
+
+    if (!count) {
+      count = 1;
+    } else {
+      count = parseInt(count, 10) + 1;
+    }
+
+    localStorage.setItem(KEY, count);
+    el.textContent = count.toLocaleString();
+  })();
+</script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (!navToggle || !navLinks) return;
+
+    navToggle.addEventListener('click', function () {
+      navLinks.classList.toggle('nav-open');
+    });
+  });
+</script>
+</body>
+</html>
+
+
