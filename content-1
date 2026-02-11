@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unplug to Reconnect – Digital Burnout Campaign</title>
+  <!--
+    This page is the front‑facing website for a student‑led digital wellbeing campaign.
+    It follows a clear narrative: introduce the problem of digital burnout,
+    explain the warning signs, propose a simple reset plan, share student stories,
+    showcase events and gallery content, and finally invite visitors to get involved.
+    The design is intentionally simple and uses a calm colour palette defined in
+    style.css. If you see only plain text when loading this file, make sure the
+    accompanying style.css file is located in the same directory as this index.html.
+  -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation bar -->
+  <header class="navbar">
+    <div class="brand">
+      <img src="gallery/campaign-logo.jpeg" alt="Campaign Logo" class="brand-logo-img" />
+      <span class="brand-text">Unplug to Reconnect</span>
+    </div>
+    <nav class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#signs">Signs</a>
+      <a href="#reset">Reset</a>
+      <a href="#stories">Stories</a>
+      <a href="#events">Events</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Unplug to Reconnect</h1>
+      <p class="hero-tagline">Restore your focus. Reclaim your time.</p>
+      <p class="hero-description">
+        Digital burnout occurs when constant notifications, endless scrolling and
+        screen time drain your energy and attention. This campaign helps students
+        recognise the signs, reset their habits and rebuild a healthier
+        relationship with technology.
+      </p>
+      <div class="hero-actions">
+        <a href="#reset" class="btn btn-primary">Start Your Reset Plan</a>
+        <a href="#signs" class="btn btn-secondary">Check the Signs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section section-light">
+    <div class="container">
+      <h2 class="section-title">What is Digital Burnout?</h2>
+      <p class="section-text">
+        Digital burnout is a state of mental fatigue caused by prolonged and
+        excessive exposure to screens, fast‑paced content and constant
+        connectivity. It can leave you feeling exhausted, distracted, anxious and
+        disconnected from real life even when you haven’t done anything
+        physically demanding. Our mission is to promote balance: using
+        technology mindfully rather than banning it altogether.
+      </p>
+    </div>
+  </section>
+
+  <!-- Signs Section -->
+  <section id="signs" class="section section-pattern">
+    <div class="container">
+      <h2 class="section-title">Recognise the Signs</h2>
+      <p class="section-text">
+        If you relate to several of these warning signs, you may be
+        experiencing digital burnout. Awareness is the first step towards
+        change.
+      </p>
+      <div class="card-grid">
+        <div class="card">
+          <h3 class="card-title">Brain Fog</h3>
+          <p class="card-text">
+            You open apps without a clear reason, lose track of time or
+            struggle to concentrate even when you try to study.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Tired but Wired</h3>
+          <p class="card-text">
+            You feel exhausted yet your mind stays “on” at night because your
+            brain is still stimulated from screens.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Irritability</h3>
+          <p class="card-text">
+            Small things annoy you more than usual, especially after long
+            scrolling sessions.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Always Checking</h3>
+          <p class="card-text">
+            You feel pressured to respond instantly or fear missing out when
+            you’re offline.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Low Motivation</h3>
+          <p class="card-text">
+            You want to start tasks, but scrolling makes real work feel too
+            difficult or uninteresting.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Social Draining</h3>
+          <p class="card-text">
+            You chat online all day but still feel lonely or disconnected in
+            real life.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reset Plan Section -->
+  <section id="reset" class="section section-light">
+    <div class="container">
+      <h2 class="section-title">Reset Your Habits</h2>
+      <p class="section-text">
+        Change doesn’t have to be drastic. Try this simple reset for one week:
+        (1) mute non‑urgent notifications, (2) stay screen‑free for the first
+        30 minutes of your morning and (3) schedule at least one offline
+        activity each day.
+      </p>
+      <div class="reset-list">
+        <div class="reset-item">
+          <h4 class="reset-step">Quiet Notifications</h4>
+          <p class="reset-desc">Keep only essential alerts so you’re not
+            constantly interrupted.</p>
+        </div>
+        <div class="reset-item">
+          <h4 class="reset-step">Morning Offline</h4>
+          <p class="reset-desc">Spend your first 30 minutes device‑free to
+            start calm and focused.</p>
+        </div>
+        <div class="reset-item">
+          <h4 class="reset-step">Daily Offline Hour</h4>
+          <p class="reset-desc">Read a book, go for a walk, play a sport or
+            engage in a creative hobby.</p>
+        </div>
+        <div class="reset-item">
+          <h4 class="reset-step">Sleep Reset</h4>
+          <p class="reset-desc">Charge your phone outside your bedroom and
+            power down screens an hour before bed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stories Section -->
+  <section id="stories" class="section section-pattern">
+    <div class="container">
+      <h2 class="section-title">Student Stories</h2>
+      <p class="section-text">
+        Digital burnout looks different for everyone. Read how fellow
+        students overcame it and rediscovered balance.
+      </p>
+      <div class="story-grid">
+        <div class="story-card">
+          <img src="gallery/story-1.jpeg" alt="Story 1" class="story-img" />
+          <h3 class="story-title">“I couldn’t study without checking my phone.”</h3>
+          <p class="story-text">Turning off notifications and keeping the
+            phone out of reach made all the difference.</p>
+        </div>
+        <div class="story-card">
+          <img src="gallery/story-2.jpeg" alt="Story 2" class="story-img" />
+          <h3 class="story-title">“Scrolling at night ruined my sleep.”</h3>
+          <p class="story-text">Putting the phone away an hour before bed
+            helped restore restful sleep.</p>
+        </div>
+        <div class="story-card">
+          <img src="gallery/story-3.jpeg" alt="Story 3" class="story-img" />
+          <h3 class="story-title">“I felt tired even after doing nothing.”</h3>
+          <p class="story-text">Replacing 30 minutes of scrolling with a
+            sport or walk boosted my energy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="section section-light">
+    <div class="container">
+      <h2 class="section-title">Upcoming Events</h2>
+      <p class="section-text">
+        Join our workshops and challenges to learn strategies for healthier
+        screen use.
+      </p>
+      <div class="events-list">
+        <div class="event-item">
+          <h4 class="event-title">Offline Hour Challenge</h4>
+          <p class="event-meta">March 1–7, 2026</p>
+          <p class="event-desc">A week‑long campaign encouraging you to spend
+            one hour offline each day.</p>
+        </div>
+        <div class="event-item">
+          <h4 class="event-title">Focus & Attention Workshop</h4>
+          <p class="event-meta">April 15, 2026</p>
+          <p class="event-desc">Learn practical exercises to improve
+            concentration and set up distraction‑free study sessions.</p>
+        </div>
+        <div class="event-item">
+          <h4 class="event-title">Student Panel & Discussion</h4>
+          <p class="event-meta">May 10, 2026</p>
+          <p class="event-desc">Hear from peers about their journeys, tips and
+            the impact of digital wellness habits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section section-pattern">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <p class="section-text">
+        View highlights from campaign workshops, challenges and offline moments.
+      </p>
+      <div class="gallery-grid">
+        <img src="gallery/1.jpeg" alt="Workshop activity" />
+        <img src="gallery/2.jpeg" alt="Offline challenge" />
+        <img src="gallery/3.jpeg" alt="Creative session" />
+        <img src="gallery/4.jpeg" alt="Students outdoors" />
+        <img src="gallery/5.jpeg" alt="Reading event" />
+        <img src="gallery/6.jpeg" alt="Sport activity" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-light">
+    <div class="container contact-container">
+      <div class="contact-info">
+        <h2 class="section-title">Get Involved</h2>
+        <p class="section-text">
+          Want to bring the campaign to your school, collaborate on resources or
+          share your own story? Get in touch via the form or reach out by
+          email.
+        </p>
+        <ul class="contact-list">
+          <li><strong>School:</strong> [Your School Name • UAE]</li>
+          <li><strong>Campaign:</strong> Digital Burnout Awareness</li>
+          <li><strong>Email:</strong> [your.email@example.com]</li>
+        </ul>
+      </div>
+      <div class="contact-form">
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your email" />
+
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="How would you like to collaborate or support the campaign?"></textarea>
+
+          <button type="button" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-text">Unplug to Reconnect · Student Digital Wellness Campaign</p>
+      <div class="footer-counter">
+        <span>Visitors:&nbsp;</span>
+        <img src="https://hitwebcounter.com/counter/counter.php?page=12899265&style=0006&nbdigits=6&type=page&initCount=0" alt="Visitor counter" />
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile navigation toggle script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggle = document.getElementById('nav-toggle');
+      const nav = document.getElementById('nav-links');
+      toggle.addEventListener('click', function () {
+        nav.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
