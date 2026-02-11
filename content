@@ -1,0 +1,433 @@
+/*
+  style.css – styles for the Digital Burnout Campaign website
+
+  This stylesheet defines a simple, modern design using CSS custom
+  properties (variables) for easy theming. Colours are chosen to evoke
+  calm and focus. Most elements are responsive, so the layout adapts
+  naturally to smaller screens. If you change the variables in :root,
+  they will cascade through the entire design.
+*/
+
+:root {
+  /* Colour palette */
+  --primary: #007f7f;      /* teal for primary buttons and accents */
+  --secondary: #ff6f61;    /* soft coral for secondary elements */
+  --background: #f7fafa;   /* light, almost white background */
+  --surface: #ffffff;      /* cards and sections */
+  --text: #1c1c1c;         /* primary text colour */
+  --muted: #555555;        /* muted text colour */
+  --border: #e0e0e0;       /* light grey for borders */
+  --shadow: rgba(0, 0, 0, 0.05);
+
+  /* Sizing */
+  --max-width: 1200px;
+  --gutter: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Containers */
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--gutter) 0;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--primary);
+}
+.brand-logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+.nav-links a:hover {
+  background-color: var(--border);
+}
+/* Mobile toggle */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+}
+.nav-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--text);
+  border-radius: 2px;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: var(--surface);
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 8px var(--shadow);
+    display: none;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('gallery/hero-campaign.jpeg') center/cover no-repeat;
+  color: #ffffff;
+  padding: 6rem 1rem;
+}
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.hero-tagline {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #d9f0ef;
+}
+.hero-description {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  color: #f0fefe;
+}
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: #ffffff;
+  border: 1px solid var(--primary);
+}
+/* When hovering over a primary button, darken the background slightly. Since CSS
+   doesn’t support the darken() function natively, we specify a manually
+   darker shade that complements the original primary colour. */
+.btn-primary:hover {
+  background-color: #006a6a;
+  color: #ffffff;
+}
+.btn-secondary {
+  background-color: #ffffff;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.btn-secondary:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 1rem;
+}
+.section-light {
+  background-color: var(--surface);
+}
+.section-pattern {
+  background-color: var(--background);
+}
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  text-align: center;
+}
+.section-text {
+  font-size: 1rem;
+  margin: 0 auto 2rem;
+  max-width: 700px;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* Card Grid for signs */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px var(--shadow);
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.card-text {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* Reset list */
+.reset-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.reset-item {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+.reset-step {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.reset-desc {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Stories */
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.story-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+.story-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.story-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 1rem 1rem 0.5rem;
+}
+.story-text {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 1rem 1rem;
+  flex-grow: 1;
+}
+
+/* Events list */
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.event-item {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+.event-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.event-meta {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+.event-desc {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px var(--shadow);
+  transition: transform 0.2s ease;
+}
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+}
+.contact-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+.contact-list li {
+  margin-bottom: 0.5rem;
+  color: var(--muted);
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.contact-form button {
+  align-self: flex-start;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 1rem;
+  margin-top: 3rem;
+}
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.footer-text {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.footer-counter {
+  font-size: 0.9rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Utility classes */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
